@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DICOM Viewer</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src = "main.js"></script>
+</head>
+	<div id="container">
+        <aside id="sidebar">
+            <div id="inputContainer">
+            	<!-- <input id="dicomUpload" type="file"/> -->
+            	<div id = "upload_header">Upload</div><br>
+            	<input type="file" id="file_input" accept="image/*" onchange = 'openFile(event)'/>
+            	<div id="progressBar"></div>
+            </div>
+        </aside>
+        <div id="viewer">
+        	<div id = "viewer_header">Viewer</div>
+        	<img id = 'output'>
+        </div>
+        <div id="viewerScreen"></div>
+        <div id="metaDialog" title="Meta-Daten"></div>
+        <div id="proptry">
+        	<div id = "proptry_header">DICOM Tags</div>
+        </div>
+
+    </div>
+
+</html>
